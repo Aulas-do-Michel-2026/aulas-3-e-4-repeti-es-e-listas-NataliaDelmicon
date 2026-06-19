@@ -8,7 +8,7 @@ vai transformar esse texto em lista para você.
 
 Depois imprima uma lista apenas com os números ímpares.
 
-Dica: Crie outra lista e popule ela, a partir da varredura da lista original.
+Dica: Crie outra lista e pule ela, a partir da varredura da lista original.
 
 Exemplos:
 
@@ -23,3 +23,11 @@ Os números ímpares são [1, 3, 5]
 lista = [*map(int, input("Digite a sua lista (separando os números por vírgula): ").split(","))]
 
 # Fazer a partir daqui...
+
+impares = []
+
+for numero in lista:
+    if numero % 2 != 0:
+        impares.append(numero)
+
+print("Os números ímpares são", impares)
